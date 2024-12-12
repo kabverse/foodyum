@@ -1,0 +1,499 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    
+    <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"/>
+
+    <!--~~~~~~~~~~~~~~~ Swiper's CSS ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./output.css">
+    <title>FOODYUM</title>
+</head>
+
+<body>
+    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+    <header id="navbar" class="bg-gray-950 fixed w-full top-0 left-0 z-50">
+        <nav class="container flex items-center justify-between h-16 sm:h-20">
+            <div class="font-Jost font-bold sm:text-3xl xl:text-7xl"><span class="text-red-500">F</span><span class="text-yellow-500">O</span><span class="text-blue-500">O</span><span class="text-green-500">D</span><span class="text-pink-500">Y</span><span class="text-lime-500">U</span><span class="text-orange-500">M</span></div>
+
+            <div id="nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-gray-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
+                <ul class="flex flex-col items-center gap-8 lg:flex-row">
+                    <li>
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#popular" class="nav-link">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#clients" class="nav-link">Clients</a>
+                    </li>
+                    <li>
+                        <!-- <a href="#review" class="nav-link">Review</a> -->
+                    </li>
+                </ul>
+            </div>
+
+            <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+                <i class="ri-menu-4-line"  id="hamburger"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
+        <section id="home" class="relative">
+            <div class="container">
+                <!-- blob 1 -->
+                <div class="w-64 h-64 bg-gray-700 rounded-full blur-3xl -z-10 opacity-40 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                </div>
+
+                <!-- blob 2 -->
+                <div class="w-64 h-64 bg-gray-700 rounded-full blur-3xl -z-10 opacity-40 absolute right-0 bottom-0">
+                </div>
+
+                <div class="flex flex-col items-center gap-5 lg:flex-row">
+                    <!-- Content -->
+                    <div class="home__data w-full space-y-5 lg:w-1/2">
+                        <h1>
+                            Corporate<br>
+                            <span class="text-orange-500">Food</span><br>
+                            Services
+                        </h1>
+
+                        <p class="text-slate-300 font-Lobster">
+                            We at Foodyum are primarily focused on providing homemade meals made from fresh ingredients that not only promotes improved health but also boosts nutrients and flavours!!
+                        </p>
+
+                        <div class="flex flex-col gap-2 sm:flex-row md:gap-4 lg:pt-5 xl:pt-10">
+                            <a href="mailto:info@foodyum.co.in">
+                                <button class="btn">
+                                    <span>Contact Now</span>
+                                    <i class="ri-restaurant-fill"></i>
+                                </button>
+                            </a>
+
+                            <a href="#about">
+                                <button class="btn btn_outline">
+                                    <span>Know More</span>
+                                    <i class="ri-restaurant-fill"></i>
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="flex items-center gap-5 text-lg lg:pt-10">
+                            <i class="ri-instagram-line text-slate-300 hover:text-orange-500 duration-300 cursor-pointer"></i>
+                            <i class="ri-linkedin-fill text-slate-300 hover:text-orange-500 duration-300 cursor-pointer"></i>
+                        </div>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="w-full relative lg:w-1/2">
+                        <img src="assets/img/home.png" alt="home_image" class="home__image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--~~~~~~~~~~~~~~~ Services ~~~~~~~~~~~~~~~-->
+        <div class="bg-orange-100 text-gray-900 py-20 relative">
+            <div class="container w-full grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <!-- card 1 -->
+                <div class="service__card border border-gray-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-restaurant-2-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">
+                            Four-Course <br>
+                            Meals 
+                        </p>
+                    </div>
+                    <p class="font-Lobster">
+                        In our base kitchen, we meticulously prepare four-course meals daily, covering breakfast, lunch, evening snacks, and dinner, ensuring a wholesome and satisfying dining experience throughout the day.
+                    </p>
+                </div>
+
+                <!-- card 2 -->
+                <div class="service__card border border-gray-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-goblet-2-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">
+                            Multi-Cuisine <br>
+                            Options
+                        </p>
+                    </div>
+                    <p class="font-Lobster">
+                        Our extensive menu offers a wide variety of food options, featuring multiple cuisines, including North Indian, South Indian, Chinese, and Continental, to cater to diverse tastes and preferences.
+                    </p>
+                </div>
+
+                <!-- card 3 -->
+                <div class="service__card border border-gray-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-store-3-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">
+                            Specialize In<br>
+                            Tuck Shops
+                        </p>
+                    </div>
+                    <p class="font-Lobster">
+                        We bring extensive expertise in managing tuck shops, operating efficiently 24/7 to meet all your needs.
+                    </p>
+                </div>
+
+                <!-- card 4 -->
+                <div class="service__card border border-gray-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-money-rupee-circle-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">
+                            Affordable <br>
+                            Price
+                        </p>
+                    </div>
+                    <p class="font-Lobster">
+                        We pride ourselves on offering exceptional quality at affordable prices, ensuring that everyone can enjoy delicious, wholesome meals without stretching their budget. Quality dining doesn’t have to come at a premium!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--~~~~~~~~~~~~~~~ About us ~~~~~~~~~~~~~~~-->
+        <section id="about" class="relative overflow-hidden">
+
+            <div class="about__top flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
+                <h2 class="title">About Us</h2>
+            </div>
+
+            <div class="container space-y-10 xl:space-y-0">
+                <!-- item 1 -->
+                <div class="flex flex-col items-center lg:flex-row gap-5">
+                    <!-- image -->
+                    <div class="about__item__1-img w-full lg:w-1/2">
+                        <img src="assets/img/plant-1.png" alt="about-image" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto rounded-full">
+                    </div>
+
+                    <!-- contant -->
+                    <div class="about__item__1-content w-full lg:w-1/2">
+                        <div class="space-y-5">
+                            <h3>
+                                <span class="text-orange-500">Veenu Ghai</span>  <br>
+                                Proprietor
+                            </h3>
+                            <p class="text-slate-300 font-Lobster">
+                                In 2012, I started my journey with tiffin services from my home kitchen—not because I was naturally good at cooking, as many women are, but because I had the fortune to understand the texture of ingredients, the art of pairing the right foods, and, most importantly, the magic of flavors. I have always loved giving a fresh, modern twist to age-old ghar ka khaana, which led me on an exciting gastronomical journey of transforming boring recipes into delightful creations for my clients to relish. Pursuing this passion was not an easy decision; it meant stepping away from a well-paying job to venture into the unknown. Yet, I’m grateful I took that leap, as it has brought me to where I am today. At FOODYUM, we promise to deliver something exclusive, with a ghar jaisa feel, that’s not just delicious but healthy too!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item 2 -->
+                <div class="flex flex-col items-center lg:flex-row-reverse gap-5">
+                    <!-- image -->
+                    <div class="about__item__2-img w-full lg:w-1/2">
+                        <img src="assets/img/plant-2.png" alt="about-image" class="w-full sm:w-2/3 lg:w-full xl:w-3/3 mx-auto rounded-full">
+                    </div>
+
+                    <!-- content -->
+                    <div class="about__item__2-content w-full lg:w-1/2">
+                        <div class="space-y-5">
+                            <h3>
+                                Why <br>
+                                <span class="text-orange-500">Foodyum</span> 
+                                ?
+                            </h3>
+                            <p class="text-slate-300 font-Lobster">
+                                At our establishment, we prioritize quality and freshness in every dish. We procure fresh vegetables daily and use only premium-quality ingredients, including desi ghee, Amul butter, and filtered oil as our cooking mediums. Our homemade multigrain tawa rotis and carefully selected basmati rice (a mix of dubar and mogra) reflect our commitment to wholesome, authentic flavors. All our cooking is done with purified RO water, ensuring cleanliness and safety. With experienced chefs, trained staff, and over a decade of culinary expertise, we deliver a multicuisine menu featuring creative recipes. We take pride in serving clean, homemade food with no added preservatives—just pure, flavorful goodness.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--~~~~~~~~~~~~~~~ Menu ~~~~~~~~~~~~~~~-->
+        <section id="popular" class="bg-gray-900">
+            <div class="popular__top flex flex-col items-center gap-3 text-center mb-40">
+                <h2 class="title">Our Menu</h2>
+            </div>
+
+            <div class="container w-full grid grid-cols-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <!-- card 1 -->
+                <div class="popular__card bg-gray-950 p-10 pt-24 rounded-md relative">
+                    <img src="assets/img/cart-1.png" alt="popular_image" class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500 rounded-full">
+                    <p class="italic font-Hindi">नाश्ता</p>
+                    <h3>Breakfast</h3>
+
+                    <div class="flex items-center justify-between">
+                        <a href="assets/Morning/1.png" download="morning-menu.png">
+                            <button class="bg-orange-500 px-2 py-1 mt-5 rounded-sm">
+                                <p>Click To Download<i class="ri-restaurant-line text-xl"></i></p>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="popular__card bg-gray-950 p-10 pt-24 rounded-md relative">
+                    <img src="assets/img/cart-2.png" alt="popular_image" class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500 rounded-full">
+                    <p class="italic font-Hindi">दिन का खाना</p>
+                    <h3>lunch</h3>
+
+                    <div class="flex items-center justify-between">
+                        <a href="assets/Morning/2.png" download="afternoon-menu.png">
+                            <button class="bg-orange-500 px-2 py-1 mt-5 rounded-sm">
+                                <p>Click To Download<i class="ri-restaurant-line text-xl"></i></p>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="popular__card bg-gray-950 p-10 pt-24 rounded-md relative">
+                    <img src="assets/img/cart-3.png" alt="popular_image" class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500 rounded-full">
+                    <p class="italic font-Hindi">नाश्ता</p>
+                    <h3>Snacks</h3>
+
+                    <div class="flex items-center justify-between">
+                        <a href="assets/Morning/3.png" download="evening-menu.png">
+                            <button class="bg-orange-500 px-2 py-1 mt-5 rounded-sm">
+                                <p>Click To Download<i class="ri-restaurant-line text-xl"></i></p>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- card 4 -->
+                <div class="popular__card bg-gray-950 p-10 pt-24 rounded-md relative">
+                    <img src="assets/img/cart-4.png" alt="popular_image" class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500 rounded-full">
+                    <p class="italic font-Hindi">रात का खाना</p>
+                    <h3>Dinner</h3>
+
+                    <div class="flex items-center justify-between">
+                        <a href="assets/Morning/4.png" download="dinner-menu.png">
+                            <button class="bg-orange-500 px-2 py-1 mt-5 rounded-sm">
+                                <p>Click To Download<i class="ri-restaurant-line text-xl"></i></p>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center text-center items-center mt-10 popular__top text-orange-500">
+                <p>Contact Us For Customized Menu.</p>
+            </div>
+        </section>
+
+        <!--~~~~~~~~~~~~~~~ Clients ~~~~~~~~~~~~~~~-->
+        <section id="clients" class="relative overflow-hidden">
+
+            <div class="client__top flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
+                <h2 class="title">Clients</h2>
+            </div>
+
+            <div class="container flex flex-wrap gap-4 p-4">
+                <!-- Row 1 -->
+                <div class="client__container bg-[url('tata.png')] bg-cover bg-center p-6 rounded-lg flex justify-center items-center text-center w-full sm:w-[100%] lg:w-[32%] h-[200px] sm:h-[250px] lg:h-[300px]"></div>
+                <div class="client__container bg-[url('QE.png')] bg-cover bg-center p-6 rounded-lg flex justify-center items-center text-center w-full sm:w-[100%] lg:w-[32%] h-[200px] sm:h-[250px] lg:h-[300px]"></div>
+                <div class="client__container bg-[url('rosmerta.png')] bg-cover bg-center p-6 rounded-lg flex justify-center items-center text-center w-full sm:w-[100%] lg:w-[32%] h-[200px] sm:h-[250px] lg:h-[300px]"></div>
+                
+                <!-- Row 2 -->
+                <div class="client__container bg-[url('TUV.png')] bg-cover bg-center p-6 rounded-lg flex justify-center items-center text-center w-full sm:w-[100%] lg:w-[32%] h-[200px] sm:h-[250px] lg:h-[300px]"></div>
+                <div class="client__container bg-[url('nabl.png')] bg-cover bg-center p-6 rounded-lg flex justify-center items-center text-center w-full sm:w-[100%] lg:w-[32%] h-[200px] sm:h-[250px] lg:h-[300px]"></div>
+                <div class="client__container bg-[url('fnp.png')] bg-cover bg-center p-6 rounded-lg flex justify-center items-center text-center w-full sm:w-[100%] lg:w-[32%] h-[200px] sm:h-[250px] lg:h-[300px]"></div>
+                
+                <!-- Row 3 -->
+                <div class="client__container bg-[url('royal.png')] bg-cover bg-center p-6 rounded-lg flex justify-center items-center text-center w-full sm:w-[100%] lg:w-[32%] h-[200px] sm:h-[250px] lg:h-[300px]"></div>
+                <div class="client__container bg-[url('policy.png')] bg-cover bg-center p-6 rounded-lg flex justify-center items-center text-center w-full sm:w-[100%] lg:w-[32%] h-[200px] sm:h-[250px] lg:h-[300px]"></div>
+                <div class="client__container bg-[url('oyo.png')] bg-cover bg-center p-6 rounded-lg flex justify-center items-center text-center w-full sm:w-[100%] lg:w-[32%] h-[200px] sm:h-[250px] lg:h-[300px]"></div>
+            </div>
+            
+            
+            
+        
+        </section>
+        
+        <!--~~~~~~~~~~~~~~~ Review ~~~~~~~~~~~~~~~-->
+        <!--
+        <section id="review" class="relative mb-20 md:mb-28 overflow-hidden">
+
+            <div class="review__top flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
+                <h2 class="title">Reviews</h2>
+            </div>
+
+            <div class="review__swiper container">
+                <div class="swiper py-12">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="flex flex-col gap-5 bg-gray-900 rounded-md p-6">
+                                <p class="font-Lobster">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.</p>
+                                <div class="flex items-center">
+                                    <img src="assets/img/review-1.jpg" alt="review_image" class="w-12 h-12 rounded-full">
+                                    <div class="ml-2">
+                                        <p class="text-orange-500 uppercase">John doe</p>
+                                        <p>Designer</p>
+                                    </div>
+                                    <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="flex flex-col gap-5 bg-gray-900 rounded-md p-6">
+                                <p class="font-Lobster">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.</p>
+                                <div class="flex items-center">
+                                    <img src="assets/img/review-2.jpg" alt="review_image" class="w-12 h-12 rounded-full">
+                                    <div class="ml-2">
+                                        <p class="text-orange-500 uppercase">John doe</p>
+                                        <p>Designer</p>
+                                    </div>
+                                    <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="flex flex-col gap-5 bg-gray-900 rounded-md p-6">
+                                <p class="font-Lobster">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.</p>
+                                <div class="flex items-center">
+                                    <img src="assets/img/review-3.jpg" alt="review_image" class="w-12 h-12 rounded-full">
+                                    <div class="ml-2">
+                                        <p class="text-orange-500 uppercase">John doe</p>
+                                        <p>Designer</p>
+                                    </div>
+                                    <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="flex flex-col gap-5 bg-gray-900 rounded-md p-6">
+                                <p class="font-Lobster">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.</p>
+                                <div class="flex items-center">
+                                    <img src="assets/img/review-4.jpg" alt="review_image" class="w-12 h-12 rounded-full">
+                                    <div class="ml-2">
+                                        <p class="text-orange-500 uppercase">John doe</p>
+                                        <p>Designer</p>
+                                    </div>
+                                    <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="flex flex-col gap-5 bg-gray-900 rounded-md p-6">
+                                <p class="font-Lobster">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet voluptas asperiores alias sed consequatur.</p>
+                                <div class="flex items-center">
+                                    <img src="assets/img/review-1.jpg" alt="review_image" class="w-12 h-12 rounded-full">
+                                    <div class="ml-2">
+                                        <p class="text-orange-500 uppercase">John doe</p>
+                                        <p>Designer</p>
+                                    </div>
+                                    <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        -->
+    </main>
+
+    <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
+    <footer class="bg-orange-100 text-gray-950 pt-20 pb-10 md:pt-28 relative">
+        
+        <!-- social icon -->
+        <div class="footer__icon container mb-10">
+            <div class="border-b border-gray-500 relative">
+                <div class="absolute top-0 transform -translate-y-1/2 left-0 right-0 max-w-36 mx-auto">
+                    <div class="bg-orange-100 text-lg text-center space-x-2">
+                        <i class="ri-instagram-line hover:text-orange-500 duration-300 cursor-pointer"></i>
+                        <i class="ri-linkedin-fill hover:text-orange-500 duration-300 cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- content -->
+        <div class="footer__content container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-center md:text-start">
+            <!-- item 1 -->
+            <div>
+                <div class="text-7xl text-gray-700 text-center inline-block">
+                    <i class="ri-restaurant-fill"></i>
+                    <p class="font-Lobster tex-xl sm:text-2xl">Foodyum</p>
+                </div>
+            </div>
+
+            <!-- item 2 -->
+            <div>
+                <p class="mb-5 font-bold text-xl">Quick Links</p>
+
+                <div class="flex flex-col gap-1">
+                    <a class="hover:text-orange-500 duration-300" href="#">Home</a>
+                    <a class="hover:text-orange-500 duration-300" href="#about">About</a>
+                    <a class="hover:text-orange-500 duration-300" href="#popular">Menu</a>
+                    <a class="hover:text-orange-500 duration-300" href="#clients">Clients</a>
+                    <!-- <a class="hover:text-orange-500 duration-300" href="#review">Reviews</a> -->
+                </div>
+            </div>
+
+            <!-- item 3 -->
+            <div>
+                <p class="mb-5 font-bold text-xl">Licenses</p>
+
+                <div class="flex flex-col gap-1">
+                    <p>FSSAI : 20822005003136</p>
+                    <p>GST : 06AWWPK45193ZT</p>
+                </div>
+            </div>
+
+            <!-- item 4 -->
+            <div>
+                <p class="mb-5 font-bold text-xl">Contact Us</p>
+
+                <div class="flex flex-col gap-1">
+                    <a class="hover:text-orange-500 duration-300" href="tel:+919650049090">+91 9650049090</a>
+                    <a class="hover:text-orange-500 duration-300" href="mailto:info@foodyum.co.in">info@foodyum.co.in</a>
+                    <br>
+                    <p>
+                        Shop no. 28 & 29 , J P
+                        Market , Samaspur
+                        Village, Sector 51,
+                        Gurugram, Haryana, 122003
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- copyright -->
+        <div class="copy__right container">
+            <p class="text-center mt-10 opacity-50">Copyright &copy; 2024 Foodyum. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
+    <a href="#" class="fixed right-4 -bottom-1/2 bg-orange-500 shadow-sm inline-block px-3 py-1 md:px-4 md:py-2 rounded-md text-lg z-50 hover:-translate-y-1 duration-300" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--~~~~~~~~~~ SCROLLREVEAL ~~~~~~~~~~-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--~~~~~~~~~~ mainjs ~~~~~~~~~~-->
+    <script src="main.js"></script>
+    
+</body>
+
+</html>
